@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Choose a Frontend",
+        "ownerID": 1,
+        "description": "Once backend API is created, choose a frontend JS framework and create a user interface to add and manage tasks assigned to employees",
+        "complete": true
+    },
+    {
+        "name": "Sleep and Snore",
+        "ownerID": 2,
+        "description": "Make as much noise sawing logs while you sleep under Sean's feet",
+        "complete": true
+    },
+    {
+        "name": "Feed dogs",
+        "ownerID": 1,
+        "description": "Feed the dogs the appropriate portion of food",
+        "complete": false
+    }
+]
