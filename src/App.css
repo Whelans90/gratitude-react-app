@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.wrapper {
+  padding: 20px;
+}
+
 .centered-container {
   display: flex;
   justify-content: center;
@@ -16,6 +20,7 @@
   flex-direction: column;
   /*justify-content: center;*/
   align-items: center;
+  padding: 20px;
 }
 
 .Auth-form {

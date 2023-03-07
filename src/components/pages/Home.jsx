@@ -1,18 +1,11 @@
 import React from 'react';
-import { Container, Card } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 
 function Home() {
     return (
-        <div>
-        <h1>HOME</h1>
         <Container>
-            <Card className='mt-4'>
-                <Card.Body>
-                    <h2>Home Page</h2>
-                </Card.Body>
-            </Card>
+        <h1>Gratitude</h1>
         </Container>
-        </div>
     );
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Container, Table} from 'react-bootstrap';
 
-const EmployeeTable = ({ employees }) => {
+const UsersTable = ({ users }) => {
     return (
         <Container>
-            <Table className="table-striped thead-dark">
+            <Table className="table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
@@ -14,13 +14,13 @@ const EmployeeTable = ({ employees }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {employees.map(employee => {
+                    {users.map(user => {
                         return (
                             <tr>
-                                <th scope="row">{employee.id}</th>
-                                <td>{employee.firstName}</td>
-                                <td>{employee.lastName}</td>
-                                <td>{employee.email}</td>
+                                <th scope="row">{user.id}</th>
+                                <td>{user.firstName}</td>
+                                <td>{user.lastName}</td>
+                                <td>{user.email}</td>
                             </tr>
                         )
                     })}
@@ -30,4 +30,4 @@ const EmployeeTable = ({ employees }) => {
     );
 }
 
-export default EmployeeTable;
+export default UsersTable;

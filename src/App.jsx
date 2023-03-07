@@ -2,30 +2,20 @@ import './App.css';
 import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarHeader from './components/inc/NavbarHeader';
-import EmployeeTable from './components/pages/EmployeeTable';
-import { Outlet } from "react-router-dom";
-import { getEmployees } from './components/pages/Employees';
+import Login from './components/pages/Login';
+import { Outlet, Link, useLoaderData, } from "react-router-dom";
+import useToken from './components/inc/useToken';
 
+export default function App() {
+  const { token, setToken } = useToken();
 
-
-function App() {
-  const [employees, setEmployees] = useState([]);
-
-  useEffect(() => {
-      fetch("http://localhost:8080/api/employees")
-      .then(response => response.json())
-      .then(data =>  setEmployees(data))
-    
-    
-  }, []);
-
-  
-
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
   return (
     
     <div>
       <NavbarHeader/>
-      <EmployeeTable employees={employees} />
       <div id="detail">
         <Outlet />
       </div>
@@ -33,5 +23,4 @@ function App() {
   );
 }
 
-export default App;
 
