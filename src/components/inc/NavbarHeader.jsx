@@ -13,6 +13,7 @@ function NavbarHeader() {
               <Link to="/home" className='nav-link'>Home</Link>
               <Link to="/contact" className='nav-link'>Contact Us</Link>
               <Link to="/employees" className='nav-link'> Employees</Link>
+              <Link to="/dashboard" className='nav-link'> Dashboard</Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">

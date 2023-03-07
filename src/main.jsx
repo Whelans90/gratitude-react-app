@@ -8,6 +8,8 @@ import Home from "./components/pages/Home";
 import ContactUs from './components/pages/Contact';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
+import Dashboard from './components/pages/Dashboard';
+import Preferences from './components/pages/Preferences';
 
 
 const router = createBrowserRouter([
@@ -31,7 +33,16 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register/>
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard/>
+      },
+      {
+        path: "prefrences",
+        element: <Preferences/>
       }
+
     ]
   },
 ]);

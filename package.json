@@ -1,5 +1,5 @@
 {
-  "name": "employee-react-app",
+  "name": "gratitude-react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,6 +23,6 @@
   },
   "proxy": "http://localhost:8080",
   "eslintConfig": {
-    "extends": "employee-react-app"
+    "extends": "gratitude-react-app"
   }
 }
